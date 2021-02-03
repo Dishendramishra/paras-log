@@ -444,7 +444,7 @@ public class ETLogGUI extends JFrame
         this.jmb.add(this.optMenu);
         this.jmb.add(this.helpMenu);
         this.setJMenuBar(this.jmb);
-        (this.topPanel = new JPanel()).setPreferredSize(new Dimension(this.xdim, 180));
+        (this.topPanel = new JPanel()).setPreferredSize(new Dimension(this.xdim, 200));
         this.topPanel.setBackground(Color.white);
         this.topLayout = new SpringLayout();
         this.topPanel.setLayout(this.topLayout);
@@ -793,7 +793,7 @@ public class ETLogGUI extends JFrame
                 }
                 final ETLogGUI this$0 = ETLogGUI.this;
                 this$0.size += 25;
-                ETLogGUI.this.bottomLayout.putConstraint("East", ETLogGUI.this.bottomPanel, 1160, "West", ETLogGUI.this.bottomPanel);
+                ETLogGUI.this.bottomLayout.putConstraint("HORIZONTAL_CENTER", ETLogGUI.this.bottomPanel, 0, "HORIZONTAL_CENTER", ETLogGUI.this.bottomPanel);
                 ETLogGUI.this.bottomLayout.putConstraint("South", ETLogGUI.this.bottomPanel, 5, "South", ETLogGUI.this.params[ETLogGUI.this.size - 1]);
                 ETLogGUI.this.bottomPanel.validate();
                 ETLogGUI.this.bottomScrollPane.validate();
@@ -819,7 +819,7 @@ public class ETLogGUI extends JFrame
             }
         }
         this.params[0].addHeaders();
-        this.bottomLayout.putConstraint("East", this.bottomPanel, 1160, "West", this.bottomPanel);
+        this.bottomLayout.putConstraint("HORIZONTAL_CENTER", this.bottomPanel, 0, "HORIZONTAL_CENTER" , this.bottomPanel);
         this.bottomLayout.putConstraint("South", this.bottomPanel, 5, "South", this.params[this.size - 1]);
         (this.bottomScrollPane = new JScrollPane(this.bottomPanel)).setPreferredSize(new Dimension(this.xdim, this.ydim - 180));
         contentPane.add(this.topScrollPane, 0);

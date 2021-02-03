@@ -63,7 +63,7 @@ public class ETLogParam extends JPanel
         ETLogParam.clipboard = clipboard;
         final String[] items = { "Prefix" };
         final String[] items2 = { "Select a target", "None" };
-        final String[] items3 = { "UAr+UAr", "Dark+UAr", "UAr+Dark", "Star+UAr", "---Data----","Star+Thar", "Star+Dark", "StarI2+Dark", "---Calibration---", "Tung+Tung", "Tung+Dark", "Dark+Tung", "ThAr+ThAr", "ThAr+Dark", "Dark+ThAr", "TungI2+TungI2", "TungI2+Dark", "Bias", "Dark", "---Misc---", "Junk", "Comment", "Other" };
+        final String[] items3 = { "----Data----", "UAr+UAr", "Dark+UAr", "UAr+Dark", "Star+UAr","Star+Thar", "Star+Dark", "StarI2+Dark", "---Calibration---", "Tung+Tung", "Tung+Dark", "Dark+Tung", "ThAr+ThAr", "ThAr+Dark", "Dark+ThAr", "TungI2+TungI2", "TungI2+Dark", "Bias", "Dark", "---Misc---", "Junk", "Comment", "Other" };
         final boolean[] array = { false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, true, false, false, false, false, false, false };
         final boolean[] array2 = { false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, true, false, false, false, false, false, false, false, false };
         this.prefix = new JComboBox(items);
